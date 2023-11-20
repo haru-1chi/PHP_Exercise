@@ -13,6 +13,6 @@
     //     echo $num." ";
     // }
     echo "]<br>"."Sum = ".array_sum($nums);
-    echo "<br>"."Max in array =".max($nums);
-    echo "<br>"."Min in array =".min($nums);
+    echo "<br>"."Max in array = ".max($nums);
+    echo "<br>"."Min in array = ".min($nums);
 ?>

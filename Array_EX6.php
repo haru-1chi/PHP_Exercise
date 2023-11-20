@@ -16,7 +16,7 @@ $new_array2 = array_slice($new_array, 4, 3);
 foreach ($new_array2 as $key) {
     echo $key . " ";
 }
-echo "<br>";
+echo "<br>ค้นหาตัวเลข 50 ใน array<br>";
 if (in_array(50, $new_array2)) {
     echo "มีตัวเลขนี้ใน array";
 } else {
