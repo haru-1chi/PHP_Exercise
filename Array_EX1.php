@@ -10,7 +10,7 @@
         }
         $sum = $sum+$nums[$i];
     }
-    // สำหรับ
+    // สำหรับ foreach
     // foreach ($nums as $num) {
     //     echo $num." ";
     //     $sum = $sum+$num;
