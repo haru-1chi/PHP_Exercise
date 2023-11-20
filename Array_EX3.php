@@ -10,11 +10,11 @@ $sum_3 = 0;
 $sum_Thu = 0;
 for ($row = 0; $row < count($salesData); $row++) {
     for ($col = 0; $col < count($salesData) - 1; $col++) {
-        $sum_Thu = $sum_Thu + $salesData[3][1 + $col];
-        echo $salesData[$row][$col] . " ";
+        
+        // echo $salesData[$row][$col] . " ";
     }
-    $sum_3 = $sum_3 + $salesData[$row][3];
-
+    // $sum_3 = $sum_3 + $salesData[$row][3];
+    echo $salesData[3][$col-1];
     echo "<br>";
 }
 echo "sum_3 = " . $sum_3;
