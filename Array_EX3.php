@@ -31,15 +31,14 @@
             <?php
             for ($row = 0; $row < count($salesData); $row++) {
                 echo "<tr>";
-                echo "<td>" . $salesData[$row][0] . "</td>";
-                echo "<td>" . $salesData[$row][1] . "</td>";
-                echo "<td>" . $salesData[$row][2] . "</td>";
-                echo "<td>" . $salesData[$row][3] . "</td>";
-                echo "</tr>";
                 $sum_3 += $salesData[$row][3];
-                if ($salesData[$row][0] === "Thu") {
-                    $sum_Thu += $salesData[$row][1] + $salesData[$row][2] + $salesData[$row][3];
+                for ($col = 0; $col < 4; $col++) {
+                    echo "<td>" . $salesData[$row][$col] . "</td>";
+                    if ($salesData[$row][0] === "Thu" && ($col+1!=4)) {
+                        $sum_Thu += $salesData[$row][$col+1];
+                    }
                 }
+                echo "</tr>";
             }
             ?>
         </tbody>
