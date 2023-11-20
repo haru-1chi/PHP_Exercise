@@ -1,13 +1,24 @@
 <?php
-$ingredients = array(
-    'อัลมอนด์ป่น' => 50,
-    'น้ำตาลไอซิ่ง' => 40,
-    'น้ำตาลทราย' => 30,
-    'ไข่ขาว' => 35,
-    'โกโก้' => 10
+$teachers = array(
+    'George' => 55,
+    'Magnum' => 36,
+    'Nittaya' => 41,
+    'Buatong' => 26,
+    'Winai' => 39
 );
-    array_push($a,'น้ำตาลทราย' => 30);
-    foreach ($ingredients as $key => $value) {
-        echo $key." ".$value." กรัม"."<br>";
-    }
+$teachers['Somsak'] = 53;
+unset($teachers['Buatong']);
+
+if (array_key_exists("Nittaya",$teachers))
+  {
+  echo "พบ key ที่ระบุใน Array<br>";
+  }
+else
+  {
+  echo "ไม่พบ key ที่ระบุใน Array<br>";
+  }
+
+foreach ($teachers as $key => $value) {
+    echo $key . " " . $value . " years" . "<br>";
+}
 ?>
